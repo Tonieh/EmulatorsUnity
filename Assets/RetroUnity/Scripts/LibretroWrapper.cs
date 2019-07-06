@@ -357,29 +357,29 @@ namespace RetroUnity {
             public static short RetroInputState(uint port, uint device, uint index, uint id) {
                 switch (id) {
                     case 0:
-                        return Input.GetKey(KeyCode.Z) || Input.GetButton("B") ? (short) 1 : (short) 0; // B
+                        return Input.GetKey(KeyCode.Z)  ? (short) 1 : (short) 0; // B
                     case 1:
-                        return Input.GetKey(KeyCode.A) || Input.GetButton("Y") ? (short) 1 : (short) 0; // Y
+                        return Input.GetKey(KeyCode.A) ? (short) 1 : (short) 0; // Y
                     case 2:
-                        return Input.GetKey(KeyCode.Space) || Input.GetButton("SELECT") ? (short) 1 : (short) 0; // SELECT
+                        return Input.GetKey(KeyCode.Space) ? (short) 1 : (short) 0; // SELECT
                     case 3:
-                        return Input.GetKey(KeyCode.Return) || Input.GetButton("START") ? (short) 1 : (short) 0; // START
+                        return Input.GetKey(KeyCode.Return)  ? (short) 1 : (short) 0; // START
                     case 4:
-                        return Input.GetKey(KeyCode.UpArrow) || Input.GetAxisRaw("DpadX") >= 1.0f ? (short) 1 : (short) 0; // UP
+                        return Input.GetKey(KeyCode.UpArrow)  ? (short) 1 : (short) 0; // UP
                     case 5:
-                        return Input.GetKey(KeyCode.DownArrow) || Input.GetAxisRaw("DpadX") <= -1.0f ? (short) 1 : (short) 0; // DOWN
+                        return Input.GetKey(KeyCode.DownArrow)  ? (short) 1 : (short) 0; // DOWN
                     case 6:
-                        return Input.GetKey(KeyCode.LeftArrow) || Input.GetAxisRaw("DpadY") <= -1.0f ? (short) 1 : (short) 0; // LEFT
+                        return Input.GetKey(KeyCode.LeftArrow)  ? (short) 1 : (short) 0; // LEFT
                     case 7:
-                        return Input.GetKey(KeyCode.RightArrow) || Input.GetAxisRaw("DpadY") >= 1.0f ? (short) 1 : (short) 0; // RIGHT
+                        return Input.GetKey(KeyCode.RightArrow)  ? (short) 1 : (short) 0; // RIGHT
                     case 8:
-                        return Input.GetKey(KeyCode.X) || Input.GetButton("A") ? (short) 1 : (short) 0; // A
+                        return Input.GetKey(KeyCode.X)  ? (short) 1 : (short) 0; // A
                     case 9:
-                        return Input.GetKey(KeyCode.S) || Input.GetButton("X") ? (short) 1 : (short) 0; // X
+                        return Input.GetKey(KeyCode.S)  ? (short) 1 : (short) 0; // X
                     case 10:
-                        return Input.GetKey(KeyCode.Q) || Input.GetButton("L") ? (short) 1 : (short) 0; // L
+                        return Input.GetKey(KeyCode.Q)  ? (short) 1 : (short) 0; // L
                     case 11:
-                        return Input.GetKey(KeyCode.W) || Input.GetButton("R") ? (short) 1 : (short) 0; // R
+                        return Input.GetKey(KeyCode.W)  ? (short) 1 : (short) 0; // R
                     case 12:
                         return Input.GetKey(KeyCode.E) ? (short) 1 : (short) 0;
                     case 13:
